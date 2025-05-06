@@ -14,7 +14,7 @@ biblioteca-unl/
 │
 ├── index.html          # Página principal
 ├── estilos.css         # Hoja de estilos principal
-├── picrures/           #Donde se almacenan las imagenes
+├── pictures/           #Donde se almacenan las imagenes
 └── ...                 
 ```
 
