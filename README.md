@@ -68,7 +68,7 @@ biblioteca-unl/
 - Validar HTML con W3C Validator
 
 ## 🌐 Demo
-[Ver sitio en vivo]([https://ejemplo.com/biblioteca-unl](https://jhosgs-git.github.io/))
+https://jhosgs-git.github.io/
 
 ## 📄 Licencia
 Proyecto bajo licencia MIT. Desarrollado para la Universidad Nacional de Loja.
