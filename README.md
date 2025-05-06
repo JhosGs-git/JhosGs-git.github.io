@@ -14,10 +14,8 @@ biblioteca-unl/
 │
 ├── index.html          # Página principal
 ├── estilos.css         # Hoja de estilos principal
-├── unl.webp            # Logo institucional
-├── redes.jpg           # Imagen para Redes Informáticas
-├── programacion.jpg    # Imagen para Programación Web
-└── ...                 # Otras imágenes de materias y libros
+├── picrures/           #Donde se almacenan las imagenes
+└── ...                 
 ```
 
 ## ✨ Características Principales
