@@ -1,0 +1,284 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente principal del documento */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 20px; /* Espaciado interno alrededor del contenido */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    color: #333; /* Color de texto principal */
+}
+
+/* Estilos para el encabezado de la página */
+header {
+    padding: 20px 0; /* Espaciado vertical interno */
+    background-color: #1a5276; /* Color azul oscuro de fondo */
+    color: white; /* Color de texto blanco */
+    margin-bottom: 30px; /* Margen inferior para separar del contenido */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Contenedor del logo y títulos en el encabezado */
+.logo-header {
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 20px; /* Espaciado horizontal interno */
+}
+
+/* Estilos para el logo de la universidad */
+.logo-universidad {
+    height: 80px; /* Altura fija para el logo */
+    margin-right: 20px; /* Margen a la derecha para separar de los títulos */
+}
+
+/* Contenedor de los títulos en el encabezado */
+.titulos-header {
+    text-align: center; /* Alineación central del texto */
+}
+
+/* Estilos para el título principal (h1) */
+header h1 {
+    margin: 0; /* Elimina margen por defecto */
+    font-size: 2.2em; /* Tamaño de fuente grande */
+    color: #f1c40f; /* Color amarillo para el título */
+}
+
+/* Estilos para el subtítulo (h2) */
+header h2 {
+    margin: 10px 0 5px; /* Márgenes superior e inferior */
+    font-size: 1.8em; /* Tamaño de fuente mediano */
+}
+
+/* Estilos para el sub-subtítulo (h3) */
+header h3 {
+    margin: 5px 0 0; /* Márgenes ajustados */
+    font-size: 1.3em; /* Tamaño de fuente pequeño */
+    font-weight: normal; /* Peso de fuente normal (no negrita) */
+    color: #ecf0f1; /* Color gris claro para el texto */
+}
+
+/* Contenedor principal de las materias */
+.container {
+    display: grid; /* Usa CSS Grid para el layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 20px; /* Espacio entre elementos del grid */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos para cada tarjeta de materia */
+.materia {
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+    text-align: center; /* Alineación central del contenido */
+}
+
+/* Contenedor de la imagen de la materia */
+.materia-imagen {
+    margin-bottom: 15px; /* Margen inferior para separar del título */
+}
+
+/* Estilos para la imagen de la materia */
+.materia-imagen img {
+    width: 100%; /* Ancho completo del contenedor */
+    max-height: 150px; /* Altura máxima */
+    object-fit: cover; /* Ajuste de la imagen para cubrir el espacio */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el título de cada materia */
+.materia h2 {
+    color: #1a5276; /* Color azul oscuro */
+    border-bottom: 2px solid #f1c40f; /* Borde inferior amarillo */
+    padding-bottom: 10px; /* Espaciado para el borde */
+    margin-top: 0; /* Elimina margen superior por defecto */
+}
+
+/* Contenedor de los enlaces a libros */
+.enlaces {
+    display: flex; /* Usa flexbox para alinear enlaces */
+    flex-direction: column; /* Apila los enlaces verticalmente */
+    gap: 15px; /* Espacio entre enlaces */
+    padding: 10px 0; /* Espaciado vertical interno */
+}
+
+/* Estilos para cada enlace de libro */
+.enlace-libro {
+    display: flex; /* Usa flexbox para alinear imagen y texto */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre imagen y texto */
+    color: #2874a6; /* Color azul para el texto */
+    text-decoration: none; /* Elimina subrayado por defecto */
+    padding: 8px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: all 0.3s; /* Transición suave para efectos hover */
+    border: 1px solid #ddd; /* Borde sutil */
+}
+
+/* Efectos al pasar el mouse sobre los enlaces */
+.enlace-libro:hover {
+    background-color: #ebf5fb; /* Fondo azul claro */
+    text-decoration: none; /* Mantiene sin subrayado */
+    transform: translateY(-3px); /* Efecto de levantar */
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+}
+
+/* Estilos para las imágenes de los libros */
+.enlace-libro img {
+    width: 40px; /* Ancho fijo */
+    height: 50px; /* Alto fijo */
+    object-fit: cover; /* Ajuste de la imagen */
+    border-radius: 3px; /* Bordes ligeramente redondeados */
+}
+
+/* Estilos para el texto de los enlaces */
+.enlace-libro span {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* ============================================ */
+/* Estilos responsivos para pantallas pequeñas */
+/* ============================================ */
+@media (max-width: 768px) {
+    /* Cambia el grid a una sola columna */
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Ajusta el encabezado para móviles */
+    .logo-header {
+        flex-direction: column; /* Apila logo y títulos */
+        text-align: center; /* Alineación central */
+    }
+    
+    /* Ajustes para el logo en móviles */
+    .logo-universidad {
+        margin-right: 0; /* Elimina margen derecho */
+        margin-bottom: 15px; /* Añade margen inferior */
+        height: 60px; /* Altura reducida */
+    }
+    
+    /* Cambia la dirección de los enlaces en móviles */
+    .enlace-libro {
+        flex-direction: column; /* Apila imagen y texto */
+        text-align: center; /* Alineación central */
+    }
+    
+    /* Ajustes para el texto en móviles */
+    .enlace-libro span {
+        text-align: center; /* Alineación central */
+        margin-top: 5px; /* Margen superior pequeño */
+    }
+}
+
+/* ESTILOS PARA EL PIE DE PÁGINA */
+
+/* Contenedor principal del footer */
+.footer {
+    background-color: #1a5276; /* Color azul institucional */
+    color: white; /* Texto en blanco */
+    padding: 40px 0 20px; /* Espaciado interno: 40px arriba, 20px abajo */
+    margin-top: 30px; /* Separación del contenido superior */
+}
+
+/* Contenedor flexible para las dos columnas */
+.footer-content {
+    display: flex; /* Usa flexbox para el layout */
+    justify-content: space-around; /* Distribuye el espacio entre columnas */
+    flex-wrap: wrap; /* Permite que se apilen en móviles */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+/* Estilo para cada sección (columna) */
+.footer-section {
+    flex: 1; /* Cada sección ocupa igual espacio */
+    min-width: 300px; /* Ancho mínimo antes de apilarse */
+    margin-bottom: 20px; /* Espacio inferior */
+    padding: 0 20px; /* Espaciado interno */
+}
+
+/* Estilo para los títulos de sección */
+.footer-section h4 {
+    color: #f1c40f; /* Amarillo institucional */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 1.3em; /* Tamaño de fuente */
+    border-bottom: 2px solid #f1c40f; /* Subrayado decorativo */
+    padding-bottom: 10px; /* Espacio entre texto y borde */
+    display: inline-block; /* Para que el borde solo cubra el texto */
+}
+
+/* Estilo para párrafos y enlaces */
+.footer-section p, 
+.footer-section a {
+    color: #ecf0f1; /* Color de texto gris claro */
+    line-height: 1.8; /* Interlineado */
+    display: flex; /* Para alinear iconos con texto */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 12px; /* Espacio entre elementos */
+    text-decoration: none; /* Sin subrayado */
+    transition: all 0.3s ease; /* Transición suave para hover */
+}
+
+/* Efecto hover para enlaces */
+.footer-section a:hover {
+    color: #f1c40f; /* Cambia a amarillo al pasar mouse */
+    transform: translateX(5px); /* Desplazamiento horizontal */
+}
+
+/* Estilo para los iconos */
+.footer-section i {
+    margin-right: 10px; /* Espacio a la derecha del icono */
+    width: 20px; /* Ancho fijo para alineación */
+    text-align: center; /* Centra el icono */
+    font-size: 1.1em; /* Tamaño del icono */
+}
+
+/* Contenedor específico para redes sociales */
+.social-icons {
+    display: flex; /* Organización flexible */
+    flex-direction: column; /* Apila elementos verticalmente */
+}
+
+/* Sección inferior del footer */
+.footer-bottom {
+    text-align: center; /* Texto centrado */
+    padding-top: 20px; /* Espacio superior */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+    margin-top: 30px; /* Separación de las secciones superiores */
+    font-size: 0.9em; /* Tamaño de fuente ligeramente menor */
+}
+
+/* ESTILOS RESPONSIVOS */
+
+@media (max-width: 768px) {
+    /* Cambia a una columna en móviles */
+    .footer-content {
+        flex-direction: column; /* Apila verticalmente */
+        align-items: center; /* Centra los elementos */
+    }
+    
+    /* Ajustes para cada sección */
+    .footer-section {
+        text-align: center; /* Centra el texto */
+        margin-bottom: 30px; /* Más espacio entre secciones */
+        width: 100%; /* Ocupa todo el ancho */
+    }
+    
+    /* Centra los elementos de contacto */
+    .footer-section p,
+    .footer-section a {
+        justify-content: center;
+    }
+    
+    /* Ajustes para los títulos */
+    .footer-section h4 {
+        display: block; /* Ocupa toda la línea */
+        text-align: center; /* Texto centrado */
+    }
+}
