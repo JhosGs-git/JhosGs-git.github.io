@@ -1,4 +1,4 @@
-# README - Biblioteca Virtual UNL
+# Biblioteca Virtual UNL
 
 ## 📚 Descripción del Proyecto
 Página web de la Biblioteca Virtual de la Universidad Nacional de Loja para el 6to ciclo de Pedagogía de las Ciencias Experimentales Informáticas.
@@ -38,11 +38,11 @@ biblioteca-unl/
 ## 🛠️ Configuración
 1. Clonar repositorio:
    ```bash
-   git clone [https://github.com/tu-usuario/biblioteca-unl.git](https://github.com/JhosGs-git/JhosGs-git.github.io.git)
+   git clone https://github.com/JhosGs-git/JhosGs-git.github.io.git
    ```
 
 2. Personalizar contenido:
-   - Reemplazar imágenes en `/assets/img/`
+   - Reemplazar imágenes en `/pictures/`
    - Actualizar enlaces en `index.html`
 
 3. Requerimientos:
